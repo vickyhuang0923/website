@@ -1,5 +1,6 @@
 "use strict";
 
+
 function ownKeys(object, enumerableOnly) {
 	var keys = Object.keys(object);
 	if (Object.getOwnPropertySymbols) {
@@ -483,52 +484,56 @@ var isotopeInit = function isotopeInit() {
 -----------------------------------------------*/
 
 
-var swiperInit = function swiperInit() {
-  var swipers = document.querySelectorAll('[data-swiper]');
-  var navbarVerticalToggle = document.querySelector('.navbar-vertical-toggle');
-  swipers.forEach(function (swiper) {
-    var options = utils.getData(swiper, 'swiper');
-    var thumbsOptions = options.thumb;
-    var thumbsInit;
+// var swiperInit = function swiperInit() {
+//   var swipers = document.querySelectorAll('[data-swiper]');
+//   var navbarVerticalToggle = document.querySelector('.navbar-vertical-toggle');
+//   swipers.forEach(function (swiper) {
+//     var options = utils.getData(swiper, 'swiper');
+//     var thumbsOptions = options.thumb;
+//     var thumbsInit;
 
-    if (thumbsOptions) {
-      var thumbImages = swiper.querySelectorAll('img');
-      var slides = '';
-      thumbImages.forEach(function (img) {
-        slides += "\n          <div class='swiper-slide '>\n            <img class='img-fluid rounded mt-1' src=".concat(img.src, " alt=''/>\n          </div>\n        ");
-      });
-      var thumbs = document.createElement('div');
-      thumbs.setAttribute('class', 'swiper-container thumb');
-      thumbs.innerHTML = "<div class='swiper-wrapper'>".concat(slides, "</div>");
+//     if (thumbsOptions) {
+//       var thumbImages = swiper.querySelectorAll('img');
+//       var slides = '';
+//       thumbImages.forEach(function (img) {
+//         slides += "\n          <div class='swiper-slide '>\n            <img class='img-fluid rounded mt-1' src=".concat(img.src, " alt=''/>\n          </div>\n        ");
+//       });
+//       var thumbs = document.createElement('div');
+//       thumbs.setAttribute('class', 'swiper-container thumb');
+//       thumbs.innerHTML = "<div class='swiper-wrapper'>".concat(slides, "</div>");
 
-      if (thumbsOptions.parent) {
-        var parent = document.querySelector(thumbsOptions.parent);
-        parent.parentNode.appendChild(thumbs);
-      } else {
-        swiper.parentNode.appendChild(thumbs);
-      }
+//       if (thumbsOptions.parent) {
+//         var parent = document.querySelector(thumbsOptions.parent);
+//         parent.parentNode.appendChild(thumbs);
+//       } else {
+//         swiper.parentNode.appendChild(thumbs);
+//       }
 
-      thumbsInit = new window.Swiper(thumbs, thumbsOptions);
-    }
+//       thumbsInit = new window.Swiper(thumbs, thumbsOptions);
+//     }
 
-    var swiperNav = swiper.querySelector('.swiper-nav');
-    var newSwiper = new window.Swiper(swiper, _objectSpread(_objectSpread({}, options), {}, {
-      navigation: {
-        nextEl: swiperNav === null || swiperNav === void 0 ? void 0 : swiperNav.querySelector('.swiper-button-next'),
-        prevEl: swiperNav === null || swiperNav === void 0 ? void 0 : swiperNav.querySelector('.swiper-button-prev')
-      },
-      thumbs: {
-        swiper: thumbsInit
-      }
-    }));
+//     var swiperNav = swiper.querySelector('.swiper-nav');
+//     var newSwiper = new window.Swiper(swiper, _objectSpread(_objectSpread({}, options), {}, {
+//       navigation: {
+//         nextEl: swiperNav === null || swiperNav === void 0 ? void 0 : swiperNav.querySelector('.swiper-button-next'),
+//         prevEl: swiperNav === null || swiperNav === void 0 ? void 0 : swiperNav.querySelector('.swiper-button-prev')
+//       },
+//       thumbs: {
+//         swiper: thumbsInit
+//       }
+//     }));
 
-    if (navbarVerticalToggle) {
-      navbarVerticalToggle.addEventListener('navbar.vertical.toggle', function () {
-        newSwiper.update();
-      });
-    }
-  });
-};
+//     if (navbarVerticalToggle) {
+//       navbarVerticalToggle.addEventListener('navbar.vertical.toggle', function () {
+//         newSwiper.update();
+//       });
+//     }
+//   });
+// };
+
+
+
+
 /* -------------------------------------------------------------------------- */
 
 /*                            Theme Initialization                            */
