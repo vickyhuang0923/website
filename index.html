@@ -11,291 +11,233 @@
     <!-- Stylesheets -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Noto+Sans+TC:wght@100;300;400;500;700&display=swap" rel="stylesheet">    <link href="vendors/swiper/swiper-bundle.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/swiper@10.0.4/swiper-bundle.min.css" rel="stylesheet">
-		<link href="assets/css/theme.css" rel="stylesheet" />
-    <link href="assets/css/user.css" rel="stylesheet" />
-
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">		
+		<link href="assets/css/top.css" rel="stylesheet" />
+		<link href="assets/css/custom.css" rel="stylesheet" />
   </head>
 
 
   <body>
     <main class="main" id="top">
-      <div class="cursor-outer d-none d-md-block"></div>
 
-			<!-- nav -->
-      <nav class="navbar navbar-light py-3 pt-4 px-0 overflow-hidden">
-        <div class="container px-md-5">
-          <div class="row w-100 g-0 justify-content-between">
-            <div class="col-8">
-              <div class="d-inline-block">
-								<a class="navbar-brand pt-0 fs-3 d-flex align-items-center logo-name" href="index.html">
-									<span class="fw-bolder">Vicky</span>
-									<span class="fw-light ms-1">Huang</span>
-								</a>
+      <!-- header begin -->
+      <header id="home" class="home">
+				<div class="bg">
+					<div class="noise"></div>
+				</div>
+				<div class="brand-bg">VICKYHUANG</div>
+				<!-- nav -->
+				<nav class="navbar-area">
+					<a class="custom-brand" href="index.html">VH.</a>
+					<button class="navbar-toggler" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+						<span class="navbar-toggler-icon"></span>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link" href="#home">HOME</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#portfolio">PORTFOLIO</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#about">ABOUT</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#contact">CONTACT</a>
+							</li>	
+						</ul>
+					</div>
+				</nav>
+				<!-- nav end -->
+				<div class="p-kv__text">
+					<div class="u-glitch" data-text="UI/UX">UI/UX</div>
+					<div class="u-glitch" data-text="WEB">WEB</div>
+					<div class="u-glitch" data-text="LAYOUT">LAYOUT</div>
+					<div class="u-glitch" data-text="GRAPHIC">GRAPHIC</div>
+				</div>
+
+
+
+
+				<div class="scroll-area">
+					<div class="scroll-container">
+						<img class="circle" src="assets/img/home/scroll.png" alt="" />
+					<a class="arrow-down" href="#portfolio"> 
+						<img src="assets/img/home/scroll-arrow.png" alt="" />
+					</a>
+					</div>
+				</div>
+				
+      </header>
+      <!-- header end -->
+
+			<!-- portfolio begin -->
+			<section id="portfolio" class="portfolio">
+				<div class="bg">
+					<div class="noise"></div>
+				</div>
+				<div class="title">
+					<div class="left"></div>
+					<h1>portfolio</h1>
+					<div class="right"></div>
+				</div>
+
+				<div class="container">
+					<div class="left">
+						<img class="" src="assets/img/portfolio/left.png" alt="" />
+					</div>
+					
+					<div class="right">
+						<div class="work">
+							<a class="work-img" href="#">
+								<img src="assets/img/portfolio/img01.png" alt="" />
+							</a>
+							<div class="card-body">
+								<small>UIUX DESIGN</small>
+								<h3>슈퍼수니에-代購網站</h3>
+								<a class="" role="button" href="">VIEW MORE >></a>
 							</div>
-            </div>
-            <div class="col-4 d-lg-none text-end pe-0">
-              <button class="btn p-0 shadow-none text-black fs-3 d-inline-block" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas" aria-expanded="false" aria-label="Toggle offcanvas navigation">
-								<span class="menu-bar"></span>
-							</button>
-            </div>
-            <div class="offcanvas offcanvas-end px-0" id="navbarOffcanvas" aria-labelledby="navbarOffcanvasTitle" aria-hidden="true">
-              <div class="offcanvas-header justify-content-end">
-                <h5 class="visually-hidden offcanvas-title" id="navbarOffcanvasTitle">Menu</h5>
-                <button class="btn p-0 shadow-none text-black fs-3 d-inline text-end" type="button" data-bs-dismiss="offcanvas" aria-label="Close">
-									<span class="menu-close-bar"></span>
-								</button>
-              </div>
-              <div class="offcanvas-body px-0">
-                <div class="d-lg-flex flex-center-start gap-3 overflow-hidden">
-                  <ul class="navbar-nav ms-auto fs-sm-li ps-6">
-                    <li class="nav-item"><a class="nav-link d-inline-block nav-text-outlined lh-md text-white active" aria-current="page" href="#home">首頁Home</a></li>
-                    <li class="nav-item"><a class="nav-link d-inline-block nav-text-outlined lh-md text-white" aria-current="page" href="#portfolio">作品集Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link d-inline-block nav-text-outlined lh-md text-white" aria-current="page" href="#contact">聯絡我Contact</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-4">
-              <div class="d-none d-lg-flex justify-content-end position-relative z-index-1">
-                <div class="d-flex gap-3 align-items-start">
-                  <ul class="navbar-nav navbar-fotogency ms-auto text-end">
-                    <li class="nav-item px-2 py-1 position-relative"><a class="nav-link pt-0 active" aria-current="page" href="#home">首頁Home</a></li>
-                    <li class="nav-item px-2 py-1 position-relative"><a class="nav-link pt-0" aria-current="page" href="#portfolio">作品集Portfolio</a></li>
-                    <li class="nav-item px-2 py-1 position-relative"><a class="nav-link pt-0" aria-current="page" href="#contact">聯絡我Contact</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </nav>
-			<!-- nav end -->
-
-      <!-- section 1 begin -->
-      <section id="home" class="py-4 pb-8 pb-sm-9 mt-lg-n6">
-        <div class="container px-md-5">
-          <div class="row">
-            <div class="col-md-12 col-lg-9">
-              <h1 class="fs-4 fs-md-6 fs-xl-9 mb-5 mb-lg-0 position-relative z-index-2 index-h1">UI/UX Designer
-								<span class="fw-light text-light-gray"> and </span>
-								<span class="text-orange">Web Designer.</span>
-							</h1>
-            </div>
-          </div>
-          <div class="row mt-md-n6">
-            <div class="col-lg-4 d-lg-block mt-7 text-justify index-p">
-							<p class="lh-md text-black">
-								擁有4年UI/UX及7年網⾴、平⾯設計資歷，涵蓋科技、資訊及新創公司。協助公司設計APP、網站、後台及系統，
-								經歷約30個產品及專案，擁有2C和2B的產品設計經驗。
-							</p>
-							<p class="lh-md text-black">
-								熟悉敏捷開發，清楚了解專案歷程及進度。因需持續與PM、⼯程師合作，在溝通交流上不乏經驗累積。
-								後期被任命為設計團隊負責⼈，肩負⼯作分配和外部溝通等任務。
-							</p>
-							<p class="lh-md text-black">
-								希冀下個階段能更完善使⽤體驗，打造符合需求、兼顧使⽤體驗與商業模式之產品。
-							</p>
-							<a class="btn btn-outline-primary btn-full" role="button" href="/Applications/MAMP/htdocs/projects/vicky-website/assets/download/黃珮涵_RESUME.pdf" download="黃珮涵_RESUME">
-								下載CV
+						</div>
+						<div class="work">
+							<a class="work-img" href="#">
+								<img src="assets/img/portfolio/img02.png" alt="" />
 							</a>
+							<div class="card-body">
+								<small>UIUX DESIGN</small>
+								<h3>슈퍼수니에-代購網站</h3>
+								<a class="" role="button" href="">VIEW MORE >></a>
+							</div>
 						</div>
-            <div class="col-sm-6 col-lg-5 position-relative">
-              <div class="position-relative overflow-hidden overflow-md-visible">
-								<img class="img-fluid" src="assets/img/home/img1.png" alt="" />
-              </div>
-            </div>
-						<div class="col-sm-6 col-lg-2">
-							<img class="img-fluid" src="assets/img/home/IMG_1636.jpg" alt="" />
-						</div>
-						<div class="col-1 d-none d-lg-block">
-							<a class="scroll-indicator text-orange scroll-position" href="#portfolio"> 
-								<span>SCROLL </span><img src="assets/img/icons/long-arrow.png" alt="" />
+						<div class="work">
+							<a class="work-img" href="#">
+								<img src="assets/img/portfolio/img03.png" alt="" />
 							</a>
+							<div class="card-body">
+								<small>UIUX DESIGN</small>
+								<h3>슈퍼수니에-代購網站</h3>
+								<a class="" role="button" href="">VIEW MORE >></a>
+							</div>
 						</div>
-          </div>
-        </div>
-      </section>
-      <!-- section 1 end -->
-
-			<!-- section 2 begin -->
-			<section id="portfolio" class="py-3 position-relative">
-				<div class="container px-md-5">
-          <div class="row align-items-center">
-            <div class="mb-4 text-center">
-              <h1 class="text-uppercase section-h1">portfolio</h1>
+						<div class="work">
+							<a class="work-img" href="#">
+								<img src="assets/img/portfolio/img01.png" alt="" />
+							</a>
+							<div class="card-body">
+								<small>UIUX DESIGN</small>
+								<h3>슈퍼수니에-代購網站</h3>
+								<a class="" role="button" href="">VIEW MORE >></a>
+							</div>
+						</div>
+						<div class="work">
+							<a class="work-img" href="#">
+								<img src="assets/img/portfolio/img02.png" alt="" />
+							</a>
+							<div class="card-body">
+								<small>UIUX DESIGN</small>
+								<h3>슈퍼수니에-代購網站</h3>
+								<a class="" role="button" href="">VIEW MORE >></a>
+							</div>
+						</div>
+						<div class="work">
+							<a class="work-img" href="#">
+								<img src="assets/img/portfolio/img03.png" alt="" />
+							</a>
+							<div class="card-body">
+								<small>UIUX DESIGN</small>
+								<h3>슈퍼수니에-代購網站</h3>
+								<a class="" role="button" href="">VIEW MORE >></a>
+							</div>
 						</div>
 					</div>
 				</div>
 
-        <div class="container-fluid px-0">
-          <div class="container px-md-5">
-            <div class="row g-0">
-              <div class="col-lg-12 pb-6 px-0 mb-lg-0">
-                <div class="swiper-container swiper-theme">
-									<div class="swiper-wrapper">
-
-										<!-- work 1 -->
-                    <div class="swiper-slide">
-											<img class="img-fluid w-100" src="assets/img/exhibitions/img01.png" alt="" />
-											<div>
-												<h1 class="fw-bolder mb-3">Through the Eyes of Kubrick</h1>
-												<p class="text-warning fs-3 opacity-75">Individual</p>
-												<p class="fs-0">s a genre of Japanese art that became popular in the 17th century through to the 19th century. The word roughly translates as “pictures of the floating world”</p>
-											</div>
-											<button class="btn btn-link text-warning p-0 fs-2"><span class="fw-bolder">Details </span><img class="ms-3" src="assets/img/icons/long-arrow.png" alt="" /></button>	
-                    </div>
-
-										<!-- work 2 -->
-                    <div class="swiper-slide">
-											<img class="img-fluid w-100" src="assets/img/exhibitions/img02.png" alt="" />
-											<h1 class="fw-bolder mb-3">Wave of Surrealism in photography</h1>
-											<p class="text-warning fs-3 opacity-75">Collective</p>
-											<p class="fs-0">s a genre of Japanese art that became popular in the 17th century through to the 19th century. The word roughly translates as “pictures of the floating world”</p>
-											<button class="btn btn-link text-warning p-0 fs-2"><span class="fw-bolder">Details </span><img class="ms-3" src="assets/img/icons/long-arrow.png" alt="" /></button>
-                    </div>
-
-										<!-- work 3 -->
-                    <div class="swiper-slide">
-											<img class="img-fluid w-100" src="assets/img/exhibitions/img03.png" alt="" />
-											<h1 class="fw-bolder mb-3">Through the Eyes of Kubrick</h1>
-											<p class="text-warning fs-3 opacity-75">Individual</p>
-											<p class="fs-0">s a genre of Japanese art that became popular in the 17th century through to the 19th century. The word roughly translates as “pictures of the floating world”</p>
-											<button class="btn btn-link text-warning p-0 fs-2"><span class="fw-bolder">Details </span><img class="ms-3" src="assets/img/icons/long-arrow.png" alt="" /></button>
-                    </div>
-
-										<!-- work 4 -->
-                    <div class="swiper-slide">
-											<img class="img-fluid w-100" src="assets/img/exhibitions/img04.png" alt="" />
-											<h1 class="fw-bolder mb-3">Through the Eyes of Kubrick</h1>
-											<p class="text-warning fs-3 opacity-75">Individual</p>
-											<p class="fs-0">s a genre of Japanese art that became popular in the 17th century through to the 19th century. The word roughly translates as “pictures of the floating world”</p>
-											<button class="btn btn-link text-warning p-0 fs-2"><span class="fw-bolder">Details </span><img class="ms-3" src="assets/img/icons/long-arrow.png" alt="" /></button>
-                    </div>
-
-                  </div>
-                </div>
-                <div class="swiper-theme swiper-button-prev"></div>
-								<div class="swiper-theme swiper-button-next"></div>
-
-              </div>
-            </div>
-          </div>
-        </div>
+				<a class="l-cta" href="portfolio.html">
+					<div class="l-cta__title">
+						<div class="u-glitch u-glitch--hover" data-text="MORE">MORE</div>
+					</div>
+					<div class="l-cta__arrow"></div>
+				</a>
+				
       </section>
-			<!-- section 2 end -->
+			<!-- portfolio end -->
 
-			<!-- section 3 begin -->
-      <section id="contact" class="py-4" id="contact">
-        <div class="container px-md-5">
-          <div class="row align-items-center">
-						<div class="mb-4 text-center">
-              <h1 class="text-uppercase section-h1">contact</h1>
+			<!-- about begin -->
+      <section id="about" class="about">
+				<div class="bg">
+					<div class="noise"></div>
+				</div>
+				<div class="container">
+					<div class="left">
+						<div class="title">
+							<h1>about me</h1>
 						</div>
-            <div class="my-4 text-center">
-              <form class="my-5 px-3">
-                <div class="row g-3 g-md-5">
-                  <div class="col-md-6">
-                    <div class="card border-0">
-                      <div class="form-floating mb-3">
-                        <input class="form-control form-fotogency-header-control" id="floatingEmail" type="email" placeholder="name@example.com" />
-                        <label for="floatingEmail">Email</label>
-                      </div>
-                      <div class="form-floating mb-3">
-                        <input class="form-control form-fotogency-header-control" id="floatingName" type="text" placeholder="name" />
-                        <label for="floatingName">Your name</label>
-                      </div>
-                      <div class="form-floating mb-3">
-                        <input class="form-control form-fotogency-header-control" id="floatingPhone" type="tel" placeholder="name@example.com" />
-                        <label for="floatingPhone">Phone number</label>
-                      </div>
-                      <div class="form-floating mb-3">
-                        <input class="form-control form-fotogency-header-control" id="floatingLocation" type="text" placeholder="Desired Location" />
-                        <label for="floatingLocation">Desired location</label>
-                      </div>
-                      <div class="form-floating mb-3">
-                        <input class="form-control form-fotogency-header-control text-400" id="floatingDate" type="text" placeholder="Desired Date" />
-                        <label for="floatingDate">Desired Date</label>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="card border-0">
-                      <input class="form-control opacity-0 pb-0 pe-none d-none d-md-block" />
-                      <div class="form-floating mb-3">
-                        <textarea class="form-control form-fotogency-header-control border ps-2 form-fotogency-header-control" id="floatingTextarea" style="height: 210px" placeholder="Leave a comment here"></textarea>
-                        <label class="ps-2" for="floatingTextarea">Message</label>
-                      </div>
-                      <div class="form-floating mb-3">
-                        <input class="form-control form-fotogency-header-control" id="floatingSource" type="text" placeholder="How did you hear about us?" />
-                        <label for="floatingSource">How did you hear about us?</label>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 text-end mt-3">
-                    <button class="btn btn-link text-warning p-0" type="submit"><span class="fw-bolder text-uppercase">Submit</span><img class="ms-3" src="assets/img/icons/long-arrow.png" alt="" /></button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
+						<div class="content">
+							<div class="word">
+								<p>
+									擁有4年UI/UX及7年網⾴、平⾯設計資歷，涵蓋科技、資訊及新創公司。協助公司設計APP、網站、後台及系統，
+									經歷約30個產品及專案，擁有2C和2B的產品設計經驗。
+								</p>
+								<p>
+									熟悉敏捷開發，清楚了解專案歷程及進度。因需持續與PM、⼯程師合作，在溝通交流上不乏經驗累積。
+									後期被任命為設計團隊負責⼈，肩負⼯作分配和外部溝通等任務。
+								</p>
+								<p>
+									希冀下個階段能更完善使⽤體驗，打造符合需求、兼顧使⽤體驗與商業模式之產品。
+								</p>
+							</div>
+							<div class="image">
+								<img class="img-fluid" src="assets/img/about/img3.jpg" alt="" />
+							</div>
+						</div>
+						<div class="bottom">
+							<a role="button" href="/Applications/MAMP/htdocs/projects/vicky-website/assets/download/黃珮涵_RESUME.pdf" download="黃珮涵_RESUME">
+								DOWNLOAD CV
+								<div class="arrow"></div>
+							</a>
+						</div>
+					</div>
+					<div class="right">
+						<img class="img-fluid" src="assets/img/about/right-img.png" alt="" />
+					</div>
+				</div>
       </section>
-      <!-- section 3 end -->
+      <!-- about end -->
+
+			<!-- footer -->
+      <footer id="contact" class="contact">
+				<div class="bg">
+					<div class="noise"></div>
+				</div>
+				<div class="content">
+					<h1>CONTACT ME</h1>
+					<div class="info">
+						<a href="tel:0955948846">0955-948-846</a>
+						<a href="mailto:vicky923113@gmail.com">vicky923113@gmail.com</a>
+					</div>
+				</div>
+				<div class="copyright">
+					<p>&copy; 2023 All Rights Reserved.</p>
+				</div>
+      </footer>
+      <!-- footer end -->
 
     </main>
 
-		<!-- footer -->
-    <footer class="bg-footer-green" id="footer">
-      <div class="container py-4 px-md-5">
-        <div class="row g-0 align-items-center">
-          <div class="col-lg-3 offset-lg-1 mb-md-0 text-xs-center">
-            <div class="d-inline-block">
-							<a class="navbar-brand pt-0 fs-3 text-white d-flex align-items-center logo-name" href="index.html">
-								<span class="fw-bolder">Vicky</span>
-								<span class="fw-light ms-1">Huang</span>
-							</a>
-						</div>
-          </div>
-          <div class="col-lg-5 text-xs-center footer-margin">
-            <div class="col-12 text-white mb-3">
-							<i class="fas fa-phone"></i>
-							<a class="nav-link text-white d-inline icon-padding" href="tel:0955948846">0955-948-846</a>
-						</div>
-            <div class="col-12 text-white">
-							<i class="fas fa-envelope"></i>
-							<a class="nav-link text-white d-inline icon-padding" href="mailto:vicky923113@gmail.com">vicky923113@gmail.com</a>
-						</div>
-          </div>
-					<div class="col-lg-2 offset-lg-1 text-xs-center">
-						<p class="fs--1 my-2 fw-light text-white">&copy; 2023 All Rights Reserved.</p>
-					</div>
-        </div>
-      </div>
-    </footer>
-		<!-- footer end -->
-
 		<!-- scroll to top -->
 		<div id="scroll-Top">
-			<div class="return-to-top">
-				<img src="assets/img/icons/white-arrow.png" alt="" />
-			</div>
+			<img src="assets/img/to-top.png" alt="" />
 		</div>
 		<!-- scroll to top end -->
 
 
     <!-- JavaScripts -->
-    <script src="assets/js/jquery.js"></script>
-    <script src="vendors/popper/popper.min.js"></script>
-    <script src="vendors/bootstrap/bootstrap.min.js"></script>
-    <script src="vendors/is/is.min.js"></script>
-    <script src="vendors/fontawesome/all.min.js"></script>
-    <!-- <script src="vendors/swiper/swiper-bundle.min.js"></script> -->
-		<script src="https://cdn.jsdelivr.net/npm/swiper@10.0.4/swiper-bundle.min.js"></script>
-    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/jquery-3.7.0.min.js"></script>
+		<script src="assets/js/top.js"></script>
 		<script src="assets/js/custom.js"></script>
-
   </body>
 
 </html>

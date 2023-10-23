@@ -1,39 +1,33 @@
-$(document).ready(function(){
-	 
+(() => {
+  'use strict'
+	$("body").addClass("loaded");
 
+	$(".navbar-toggler").on('click', function(){
+		$(this).toggleClass("navbar-toggler-active");
+ });
 
-	$(window).on('scroll',function () {
-		if ($(this).scrollTop() > 350) {
-			$('.return-to-top').fadeIn();
-		} else {
-			$('.return-to-top').fadeOut();
-		}
-	});
-	$('.return-to-top').on('click',function(){
-			$('html, body').animate({
-			scrollTop: 0
-		}, 50);
-		return false;
-	});
-
-	const swiper = new Swiper('.swiper-container', {
-		
-		slidesPerView: 1,
-		spaceBetween: 50,
-		grabCursor: true,
-		loop: true,
-
-		breakpoints: {
-			576: {
-				slidesPerView: 3,
-			}
-		},
-
-		pagination: {
-			el:'.swiper-pagination',
-			clickable:true,
-		},
-	
-	});
-
+ $(window).on('scroll',function () {
+	if ($(this).scrollTop() > 350) {
+		$('#scroll-Top').fadeIn();
+	} else {
+		$('#scroll-Top').fadeOut();
+	}
 });
+$('#scroll-Top').on('click',function(){
+		$('html, body').animate({
+		scrollTop: 0
+	}, 50);
+	return false;
+});
+
+ $("#navbarsExampleDefault li a").click(function(){
+		$('#navbarSideCollapse').trigger("click");
+ })
+  document.querySelector('#navbarSideCollapse').addEventListener('click', () => {
+    document.querySelector('.offcanvas-collapse').classList.toggle('open')
+  })
+
+
+
+	
+})()
