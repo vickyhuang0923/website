@@ -985,7 +985,7 @@ button {
 	}
 
 	.portfolio .title h1 {
-		font-size: var(--fs--1);
+		font-size: var(--fs--2);
 	}
 
 	.portfolio .container .left {
@@ -998,7 +998,7 @@ button {
 	}
 
 	.card-body h3 {
-    font-size: var(--fs-work-1);
+    font-size: var(--fs--1);
 	}
 
 	.l-cta {
@@ -1017,6 +1017,68 @@ button {
 
 	.about {
     padding: 0rem 1.8rem;
+	}
+
+	.about .container {
+    display: block;
+		border-left: 0.12rem solid var(--color-dark-gray);
+		border-right: 0.12rem solid var(--color-dark-gray);
+	}
+
+	.about .container .left {
+    border-left: none;
+    height: auto;
+	}
+
+	.about .container .left .title {
+    height: auto;
+    padding: 2rem 1.5rem;
+    display: block;
+	}
+
+	.about .container .left .title h1 {
+    font-size: var(--fs--2);
+	}
+
+	.about .container .left .content {
+    display: block;
+	}
+
+	.about .container .left .content .word {
+    border-right: none;
+    height: auto;
+    padding: 2rem 1.5rem 1rem;
+    display: block;
+	}
+
+	.about .container .left .content .image {
+    width: 80%;
+    padding: 0 2rem 2rem;
+	}
+
+	.about .container .left .bottom {
+    padding: 2rem 1.5rem;
+	}
+
+	.about .container .left .bottom a {
+    font-size: var(--fs--6);
+    line-height: 1.2;
+	}
+
+	.about .container .left .bottom .arrow {
+		display: none;
+	}
+
+	.about .container .right {
+    display: none;
+	}
+
+	.contact .content h1 {
+    font-size: var(--fs--8);
+	}
+
+	.contact .content .info {
+    font-size: var(--fs--2);
 	}
 }
 
