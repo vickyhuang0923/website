@@ -1,0 +1,282 @@
+.t-mainArea--top {
+  overflow: hidden;
+}
+
+/* .mainVisual {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: 800px;
+} */
+
+.waveObjectArea {
+  width: 85vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+	gap: 55px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: -2;
+}
+
+.waveObjectArea1 {
+  width: 85vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+	gap: 55px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: -2;
+}
+
+.waveObjectArea__item {
+  width: 180px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  transition-property: transform, height;
+  transition-timing-function: cubic-bezier(0.49, 0.19, 0, 0.99);
+  transition-duration: 4s;
+}
+
+.waveObjectArea__item>.waveObject {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url(../img/animate/bg_mv-gradation--phase1.jpg) center center no-repeat;
+  background-clip: content-box;
+  -webkit-background-clip: content-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition-property: background-position, opacity;
+  transition-timing-function: cubic-bezier(0.49, 0.19, 0, 0.99);
+  transition-duration: 4s;
+}
+
+.waveObjectArea__item>.waveObject--0 {
+  background-image: url(../img/animate/bg_mv-gradation--phase1.jpg);
+}
+
+.waveObjectArea__item>.waveObject--1 {
+  background-image: url(../img/animate/bg_mv-gradation--phase2.jpg);
+}
+
+.waveObjectArea__item>.waveObject--2 {
+  background-image: url(../img/animate/bg_mv-gradation--phase3.jpg);
+}
+
+.waveObjectArea__item:nth-child(1) {
+  height: 230px;
+}
+
+.waveObjectArea__item:nth-child(2) {
+  height: 220px;
+}
+
+.waveObjectArea__item:nth-child(3) {
+  height: 230px;
+}
+
+.waveObjectArea__item--set:nth-child(1),
+.waveObjectArea__item--set:nth-child(2),
+.waveObjectArea__item--set:nth-child(3) {
+  height: 180px;
+  transform: scale(0);
+  background-position: 0 0;
+}
+
+.waveObjectArea__item--ball:nth-child(1),
+.waveObjectArea__item--ball:nth-child(2),
+.waveObjectArea__item--ball:nth-child(3),
+.waveObjectArea__item--ballStart:nth-child(1),
+.waveObjectArea__item--ballStart:nth-child(2),
+.waveObjectArea__item--ballStart:nth-child(3) {
+  height: 180px;
+  transform: scale(1);
+  background-position: 0 center;
+  transition-duration: 1.5s;
+}
+
+.waveObjectArea__item--ballStart>.waveObject {
+  transition-property: background-position;
+}
+
+.waveObjectArea__item--start {
+  transition-duration: 1.5s
+};
+
+.waveObjectArea__item--start:nth-child(1) {
+  transform: translateY(-9.1145833333vw);
+}
+
+.waveObjectArea__item--start:nth-child(1) .waveObject {
+  background-position: 0 -25.78125vw;
+}
+
+.waveObjectArea__item--start:nth-child(2) {
+  transform: translateY(-1.9270833333vw);
+}
+
+.waveObjectArea__item--start:nth-child(2) .waveObject {
+  background-position: 0 -32.96875vw;
+}
+
+.waveObjectArea__item--start:nth-child(3) {
+  transform: translateY(-3.1145833333vw);
+}
+
+.waveObjectArea__item--start:nth-child(3) .waveObject {
+  background-position: 0 -25.78125vw;
+}
+
+.waveObjectArea__item--down {
+  transition-duration: 2s;
+}
+
+.waveObjectArea__item--down .waveObject {
+  transition-duration: 2s;
+}
+
+.waveObjectArea__item--up {
+  transition-duration: 3s;
+}
+
+.waveObjectArea__item--up .waveObject {
+  transition-duration: 3s;
+}
+
+.waveObjectArea__item--down:nth-child(1) {
+  height: 180px;
+  transform: translateY(0.6458333333vw);
+}
+
+.waveObjectArea__item--down:nth-child(1) .waveObject {
+  background-position: 0 -30.6666666667vw;
+}
+
+.waveObjectArea__item--down:nth-child(2) {
+	height: 180px;
+  transform: translateY(-1.71875vw);
+}
+
+.waveObjectArea__item--down:nth-child(2) .waveObject {
+  background-position: 0 -28.3020833333vw;
+}
+
+.waveObjectArea__item--down:nth-child(3) {
+  height: 180px;
+  transform: translateY(0.6458333333vw);
+}
+
+.waveObjectArea__item--down:nth-child(3) .waveObject {
+  background-position: 0 -30.6666666667vw;
+}
+
+.waveObjectArea__item--up:nth-child(1) {
+  transform: translateY(-2.5833333333vw);
+}
+
+.waveObjectArea__item--up:nth-child(1) .waveObject {
+  background-position: 0 -25.625vw;
+}
+
+.waveObjectArea__item--up:nth-child(2) {
+  transform: translateY(-0.9895833333vw);
+}
+
+.waveObjectArea__item--up:nth-child(2) .waveObject {
+  background-position: 0 -29.21875vw;
+}
+
+.waveObjectArea__item--up:nth-child(3) {
+  transform: translateY(-1.2916666667vw);
+}
+
+.waveObjectArea__item--up:nth-child(3) .waveObject {
+  background-position: 0 -27.9166666667vw;
+}
+
+.waveObjectArea--phase0 .waveObjectArea__item .waveObject--0,
+.waveObjectArea--phase1 .waveObjectArea__item .waveObject--1,
+.waveObjectArea--phase2 .waveObjectArea__item .waveObject--2 {
+  opacity: 1;
+}
+
+
+@media screen and (max-width: 640px) {
+  /* .mainVisual {
+    height: 90vh;
+    position: relative;
+  } */
+
+  .waveObjectArea {
+    width: 100vw;
+		align-items: center;
+		justify-content: center;
+		gap: 15px;
+		margin-top: 120px;
+  }
+
+	.waveObjectArea1 {
+    width: 100vw;
+		align-items: center;
+		justify-content: center;
+		gap: 15px;
+  }
+
+	.waveObjectArea__item {
+		width: 110px;
+		border-radius: 50%;
+	}
+
+	.waveObjectArea__item:nth-child(1) {
+		height: 140px;
+	}
+	
+	.waveObjectArea__item:nth-child(2) {
+		height: 130px;
+	}
+	
+	.waveObjectArea__item:nth-child(3) {
+		height: 140px;
+	}
+
+	.waveObjectArea__item--set:nth-child(1),
+	.waveObjectArea__item--set:nth-child(2),
+	.waveObjectArea__item--set:nth-child(3) {
+		height: 110px;
+	}
+	
+	.waveObjectArea__item--ball:nth-child(1),
+	.waveObjectArea__item--ball:nth-child(2),
+	.waveObjectArea__item--ball:nth-child(3),
+	.waveObjectArea__item--ballStart:nth-child(1),
+	.waveObjectArea__item--ballStart:nth-child(2),
+	.waveObjectArea__item--ballStart:nth-child(3) {
+		height: 110px;
+	}
+
+	.waveObjectArea__item--down:nth-child(1),
+	.waveObjectArea__item--down:nth-child(2),
+	.waveObjectArea__item--down:nth-child(3) {
+		height: 110px;
+	}
+
+
+}

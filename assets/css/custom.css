@@ -108,7 +108,8 @@ button {
 /*-------------------------------------
 		2.Noise Animate
 --------------------------------------*/
-.home, .portfolio, .about, .contact {
+.home, .portfolio, .about, .contact,
+.portfolio-list, .work-content, .image-container, .backlist {
 	position: relative;
 }
 
@@ -124,7 +125,7 @@ button {
 }
 
 .noise {
-	background: url(http://vicky.local.com/assets/img/bg/noise.png);
+	background: url(/assets/img/bg/noise.png);
 	animation: noise_anima 1s steps(10) infinite;
 	opacity: 1;
 	top: 0;
@@ -744,20 +745,20 @@ button {
 
 .card-body small {
 	color: var(--color-white);
-	font-size: var(--fs--0);
+	font-size: var(--fs--1);
 	background-color: var(--color-black);
 	padding: .1rem .2rem;
 }
 
 .card-body h3 {
 	color: var(--color-black);
-	font-size: var(--fs-work-2);
-	margin: .5rem auto .8rem;
+	font-size: var(--fs--2);
+	margin: .7rem auto;
 }
 
 .card-body a {
 	color: var(--color-orange);
-	font-size: var(--fs--0);
+	font-size: var(--fs--1);
 }
 
 .more {
@@ -936,7 +937,188 @@ button {
 }
 
 /*-------------------------------------
-		9.Media
+		9.Portfolio List
+--------------------------------------*/
+.portfolio-list {
+	padding: 4rem 3rem;
+}
+
+.portfolio-list .title {
+	text-align: center;
+}
+
+.portfolio-list .title h1 {
+	font-size: var(--fs--12);
+	color: var(--color-black);
+	font-weight: var(--fw--7);
+	text-transform: uppercase;
+	padding: .5rem 3rem 1.5rem;
+}
+
+.portfolio-list hr {
+	color: var(--color-bg-black);
+	margin: 5rem 0 3rem;
+}
+
+.portfolio-list .container .top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 2rem;
+	text-transform: uppercase;
+}
+
+.portfolio-list .container .top .category-left {
+	font-size: var(--fs--10);
+	color: var(--color-black);
+	font-weight: var(--fw--7);
+}
+
+.portfolio-list .container .top .category-right {
+	font-size: var(--fs--1);
+	color: var(--color-gray);
+	font-weight: var(--fw--4);
+}
+
+.portfolio-list .container .list {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 30px;
+	flex-wrap: wrap;
+}
+
+.portfolio-list .container .list .work {
+	width: 32%;
+	margin-bottom: 30px;
+}
+
+/*-------------------------------------
+		10.Work Content
+--------------------------------------*/
+.parallax {
+	background-color: white;
+	z-index: 0;
+}
+
+.work-content {
+	background-color: white;
+	z-index: 0;
+	margin-bottom: 20rem;
+	border-radius: 0 0 20px 20px;
+}
+
+.work-content .top {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	padding: 4rem 3rem 3.5rem;
+	gap: 30px;
+	text-transform: uppercase;
+}
+
+.work-content .top h1 {
+	font-size: var(--fs--9);
+	color: var(--color-black);
+	font-weight: var(--fw--7);
+	padding: .5rem 0 1.5rem;
+	line-height: 1.2;
+}
+
+.work-content .top dl {
+	border-top: 1px solid var(--color-gray);
+	border-bottom: 1px solid var(--color-gray);
+	padding: 2rem 0;
+	width: 50%;
+}
+
+.work-content .top dt {
+	font-size: var(--fs--1);
+	color: var(--color-gray);
+	font-weight: var(--fw--5);
+}
+
+.work-content .top dd {
+	font-size: var(--fs--1);
+	color: var(--color-black);
+	font-weight: var(--fw--4);
+	margin: .5rem 0 1.5rem;
+	line-height: 1.5;
+}
+
+.work-content .top dd:last-child {
+	margin-bottom: 1rem;
+}
+
+.parallax-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -2;
+}
+
+.parallax-bg img {
+	position: relative;
+	top: -50%;
+	left: 50%;
+	height: auto;
+	width: 90%;
+	transform: translateX(-50%);
+}
+
+.image-container {
+	background-color: white;
+	z-index: 0;
+	margin-top: 45rem;
+	border-radius: 20px 20px 0 0;
+}
+
+.work-image {
+	padding: 4rem 3rem 8rem;
+}
+
+.work-image .big {
+	width: 100%;
+	margin-bottom: 2.5rem;
+}
+
+.work-image .small {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 25px;
+	width: 49%;
+	margin-bottom: 2.5rem;
+}
+
+.work-image .big img, .work-image .small img {
+	border-radius: 15px;
+}
+
+.backlist {
+	background-color: var(--color-bg-black);
+	z-index: 0;
+	padding: 7rem 3rem;
+}
+
+.backlist a {
+	font-size: var(--fs-download-2);
+	color: var(--color-dark-gray);
+	font-weight: var(--fw--5);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+}
+
+.backlist a img {
+	transform: rotate(180deg);
+}
+
+/*-------------------------------------
+		11.Media
 --------------------------------------*/
 @media screen and (max-width: 960px) {
 	html, body {
@@ -948,7 +1130,7 @@ button {
 	}
 
 	.home {
-    padding: 1.5rem 1.8rem 12rem;
+    padding: 1.5rem 1.8rem 12.5rem;
 	}
 
 	.navbar-area {
@@ -957,8 +1139,7 @@ button {
 
 	.p-kv__text {
 		font-size: var(--fs-download-2);
-		margin: 4rem auto;
-		/* gap: 4.93333321vw; */
+		margin: 3rem auto 4rem;
 	}
 
 	.p-kv__text .u-glitch {
@@ -967,7 +1148,7 @@ button {
 
 	.scroll-area {
     right: 25px;
-    bottom: 15px;
+    bottom: 5px;
 	}
 
 	.scroll-container {
@@ -993,12 +1174,8 @@ button {
 	}
 
 	.portfolio .container .right .work {
-		width: 47%;
+		width: 100%;
 		margin-bottom: 15px;
-	}
-
-	.card-body h3 {
-    font-size: var(--fs--1);
 	}
 
 	.l-cta {
@@ -1079,6 +1256,100 @@ button {
 
 	.contact .content .info {
     font-size: var(--fs--2);
+	}
+
+	.portfolio-bottom {
+    padding-bottom: 3.5rem;
+	}
+
+	.portfolio-list {
+		padding: 2rem 1.8rem 3rem;
+	}
+
+	.portfolio-list .title h1 {
+		font-size: var(--fs-download-2);
+		padding: .5rem 0 1.5rem;
+	}
+
+	.portfolio-list hr {
+		margin: 3.5rem 0 2.5rem;
+	}
+
+	.portfolio-list .container .top {
+		margin-bottom: 2rem;
+		flex-wrap: wrap;
+	}
+
+	.portfolio-list .container .top .category-left {
+		font-size: var(--fs-download-1);
+		margin-bottom: 1rem;
+	}
+	
+	.portfolio-list .container .top .category-right {
+		font-size: var(--fs--0);
+		line-height: 1.5;
+	}
+
+	.portfolio-list .container .list .work {
+		width: 100%;
+		margin-bottom: 15px;
+	}
+
+	.work-content {
+		margin-bottom: 15rem;
+	}
+	
+	.work-content .top {
+		padding: 2rem 1.8rem;
+		flex-wrap: wrap;
+		gap: 10px;
+	}
+	
+	.work-content .top h1 {
+		font-size: var(--fs--7);
+	}
+	
+	.work-content .top dl {
+		padding: 1.5rem 0;
+		width: 100%;
+	}
+	
+	.work-content .top dd:last-child {
+		margin-bottom: .5rem;
+	}
+	
+	.parallax-bg img {
+		top: 0%;
+		width: auto;
+		height: 100%;
+	}
+	
+	.image-container {
+		margin-top: 20rem;
+	}
+	
+	.work-image {
+		padding: 3rem 1.8rem 3.5rem;
+	}
+	
+	.work-image .small {
+		gap: 2.5rem;
+		width: 100%;
+		flex-wrap: wrap;
+	}
+	
+	.backlist {
+		padding: 4rem 1.8rem;
+	}
+	
+	.backlist a {
+		font-size: var(--fs--5);
+		gap: 20px;
+	}
+
+	.backlist a img {
+		width: 25%;
+		height: auto;
 	}
 }
 
