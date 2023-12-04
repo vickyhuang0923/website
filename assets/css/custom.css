@@ -125,7 +125,7 @@ button {
 }
 
 .noise {
-	background: url(/assets/img/bg/noise.png);
+	background: url('/assets/img/bg/noise.png');
 	animation: noise_anima 1s steps(10) infinite;
 	opacity: 1;
 	top: 0;
