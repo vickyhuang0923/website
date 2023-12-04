@@ -718,11 +718,11 @@ button {
 	display: flex;
 	align-items: flex-start;
 	justify-content: space-between;
-	gap: 6rem;
+	gap: 6.5rem;
 }
 
 .portfolio .container .left {
-	width: 245px;
+	width: 35%;
 	height: auto;
 }
 
@@ -730,35 +730,36 @@ button {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	margin-bottom: 30px;
 	flex-wrap: wrap;
 }
 
 .portfolio .container .right .work {
-	width: 30%;
+	width: 31.5%;
 	margin-bottom: 25px;
 }
 
 .card-body {
-	margin-top: .7rem;
+	margin-top: .8rem;
 }
 
 .card-body small {
-	color: var(--color-white);
-	font-size: var(--fs--1);
-	background-color: var(--color-black);
-	padding: .1rem .2rem;
+	color: var(--color-dark-gray);
+	font-size: var(--fs--0);
+	/* background-color: var(--color-black);
+	padding: .1rem .2rem; */
 }
 
 .card-body h3 {
 	color: var(--color-black);
-	font-size: var(--fs--2);
-	margin: .7rem auto;
+	font-size: var(--fs-work-2);
+	font-weight: var(--fw--5);
+	margin: .4rem auto .9rem;
 }
 
 .card-body a {
 	color: var(--color-orange);
-	font-size: var(--fs--1);
+	font-size: var(--fs--0);
+	font-weight: var(--fw--4);
 }
 
 .more {
@@ -984,12 +985,11 @@ button {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	margin-bottom: 30px;
 	flex-wrap: wrap;
 }
 
 .portfolio-list .container .list .work {
-	width: 32%;
+	width: 31.5%;
 	margin-bottom: 30px;
 }
 
@@ -998,7 +998,7 @@ button {
 --------------------------------------*/
 .parallax {
 	background-color: white;
-	z-index: 0;
+	z-index: 1;
 }
 
 .work-content {
@@ -1014,7 +1014,6 @@ button {
 	justify-content: space-between;
 	padding: 4rem 3rem 3.5rem;
 	gap: 30px;
-	text-transform: uppercase;
 }
 
 .work-content .top h1 {
@@ -1022,7 +1021,7 @@ button {
 	color: var(--color-black);
 	font-weight: var(--fw--7);
 	padding: .5rem 0 1.5rem;
-	line-height: 1.2;
+	line-height: 1.3;
 }
 
 .work-content .top dl {
@@ -1030,6 +1029,7 @@ button {
 	border-bottom: 1px solid var(--color-gray);
 	padding: 2rem 0;
 	width: 50%;
+	text-transform: uppercase;
 }
 
 .work-content .top dt {
@@ -1094,7 +1094,7 @@ button {
 }
 
 .work-image .big img, .work-image .small img {
-	border-radius: 15px;
+	border-radius: 12px;
 }
 
 .backlist {
@@ -1175,7 +1175,7 @@ button {
 
 	.portfolio .container .right .work {
 		width: 100%;
-		margin-bottom: 15px;
+		margin-bottom: 25px;
 	}
 
 	.l-cta {
@@ -1259,7 +1259,7 @@ button {
 	}
 
 	.portfolio-bottom {
-    padding-bottom: 3.5rem;
+    padding-bottom: 2.5rem;
 	}
 
 	.portfolio-list {
@@ -1303,6 +1303,7 @@ button {
 		padding: 2rem 1.8rem;
 		flex-wrap: wrap;
 		gap: 10px;
+		margin-top: -1px;
 	}
 	
 	.work-content .top h1 {
@@ -1319,13 +1320,13 @@ button {
 	}
 	
 	.parallax-bg img {
-		top: 0%;
-		width: auto;
-		height: 100%;
+		top: 5%;
+		/* width: 100%;
+		height: 100%; */
 	}
 	
 	.image-container {
-		margin-top: 20rem;
+		margin-top: 12rem;
 	}
 	
 	.work-image {
