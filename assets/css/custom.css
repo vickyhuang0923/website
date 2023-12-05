@@ -1099,7 +1099,7 @@ button {
 }
 
 .work-image .big img, .work-image .small img {
-	border-radius: 12px;
+	/* border-radius: 12px; */
 }
 
 .backlist {
